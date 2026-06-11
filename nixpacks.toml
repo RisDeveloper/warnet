@@ -1,5 +1,2 @@
-[phases.setup]
-nixPkgs = ["phpExtensions.pgsql", "phpExtensions.pdo_pgsql"]
-
 [variables]
-PHP_EXTENSIONS = "pgsql pdo_pgsql"
+PHP_EXTENSIONS = "pgsql"
