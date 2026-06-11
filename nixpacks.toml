@@ -1,2 +1,5 @@
-[variables]
-PHP_EXTENSIONS = "pgsql"
+[phases.setup]
+nixPkgs = ["php83Extensions.pgsql"]
+
+[phases.install]
+cmds = []
