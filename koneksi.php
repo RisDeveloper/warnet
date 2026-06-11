@@ -1,4 +1,7 @@
 ﻿<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 $host = getenv("PGHOST") ?: "db.oaypsziqktajxtbrqlww.supabase.co";
 $port = getenv("PGPORT") ?: "5432";
 $dbname = getenv("PGDATABASE") ?: "postgres";
