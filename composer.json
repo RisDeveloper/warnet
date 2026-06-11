@@ -1,0 +1,6 @@
+{
+    "name": "warnet/camin",
+    "require": {
+        "php": ">=8.0"
+    }
+}
