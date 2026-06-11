@@ -1,8 +1,5 @@
 [phases.setup]
-nixPkgs = ["php83Extensions.pgsql", "php83Extensions.pdo_pgsql"]
-
-[phases.install]
-cmds = []
+nixPkgs = ["phpExtensions.pgsql", "phpExtensions.pdo_pgsql"]
 
 [variables]
-PHP_EXTENSIONS = "pgsql"
+PHP_EXTENSIONS = "pgsql pdo_pgsql"
