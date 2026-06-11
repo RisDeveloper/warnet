@@ -1,9 +1,9 @@
 ﻿<?php
-$host = "db.oaypsziqktajxtbrqlww.supabase.co";
-$port = "5432";
-$dbname = "postgres";
-$user = "postgres";
-$password = "yOo780kiPnwvW9ok";
+$host = getenv("PGHOST") ?: "db.oaypsziqktajxtbrqlww.supabase.co";
+$port = getenv("PGPORT") ?: "5432";
+$dbname = getenv("PGDATABASE") ?: "postgres";
+$user = getenv("PGUSER") ?: "postgres";
+$password = getenv("PGPASSWORD") ?: "yOo780kiPnwvW9ok";
 
 $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 
