@@ -1,8 +1,6 @@
 {
     "name": "warnet/camin",
     "require": {
-        "php": ">=8.0",
-        "ext-pgsql": "*",
-        "ext-pdo_pgsql": "*"
+        "php": ">=8.0"
     }
 }
