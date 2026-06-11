@@ -1,7 +1,4 @@
 ﻿<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 $host = getenv("PGHOST") ?: "db.oaypsziqktajxtbrqlww.supabase.co";
 $port = getenv("PGPORT") ?: "5432";
 $dbname = getenv("PGDATABASE") ?: "postgres";
@@ -11,7 +8,7 @@ $password = getenv("PGPASSWORD") ?: "yOo780kiPnwvW9ok";
 $conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$password");
 
 if(!$conn){
-    die("Koneksi gagal: " . pg_last_error());
+    die("Koneksi gagal");
 }
 
 function db_query($conn, $query) {
