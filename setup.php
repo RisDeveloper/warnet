@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 echo "<h2>Debug</h2>";
 
 echo "<b>pgsql extension:</b> " . (extension_loaded("pgsql") ? "YES" : "NO") . "<br>";
